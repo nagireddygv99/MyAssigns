@@ -25,7 +25,7 @@ class EmpDetails
     void salaryRaise()
     {
 	System.out.println("salary raised");
-	salary = salary + (int)(0.1*salary);
+	salary = salary + (0.1*salary);
     }
 }
 
