@@ -107,29 +107,25 @@ choice 4:
 			 break;
 	    } 
 	}while(choice !=4);
-
-        
-        
-   
-   
-   # pyramid empty.java
- 	this code is to print a pyramid which is an empty one i.e only with the outer surface 
+# pyramid empty.java
+this code is to print a pyramid which is an empty one i.e only with the outer surface like the below
 
 	    *
 	   * *
 	  *   *
 	 *     *
-	*********            like this.
+	*********           
+
 	
 	
-	for this generally we go for nested loop.
-	first we go for user input with Scanner class by creating the object.
+for this generally we go for nested loop.
+first we go for user input with Scanner class by creating the object.
 	
 			
 			Scanner scanner = new Scanner(System.in);
 	
 	
-	first loop: this is to print no.of rows in simple 
+first loop: this is to print no.of rows in simple 
 	
 	
 			for(int i = 0; i < n; i++)
@@ -137,7 +133,7 @@ choice 4:
 			}
         
 	
-        inner first loop: for this i choose to print space as per the requirement, here the spaces are in such a manner decreasing from n-1 to 0
+inner first loop: for this i choose to print space as per the requirement, here the spaces are in such a manner decreasing from n-1 to 0
 	so that the loop will be like as follow
 	
 			
@@ -147,14 +143,14 @@ choice 4:
 			}
          
 	 
-	 inner second loop: here this goes for printing "*" s, 
+inner second loop: here this goes for printing "*" s, 
 	 
 	 
 	 		for(int j = 0; j < 2*i+1; j++)
 			{
 			}
 			
-			here in this second loop, follows a condition, if it's at first or last iteration of outer loop it will print as usual
+here in this second loop, follows a condition, if it's at first or last iteration of outer loop it will print as usual
 			
 			
 				if(i == 0 || i == n-1) 
@@ -163,7 +159,7 @@ choice 4:
 				}
 				
 				
-			else, again another condition follws like, if its its first or last iteration of its inner loop, then it will print "*", else, will print an space.
+else, again another condition follws like, if its its first or last iteration of its inner loop, then it will print "*", else, will print an space.
 				
 				
 				else
@@ -173,4 +169,4 @@ choice 4:
 				}
 				
 				
-	thats all it completes.
+thats all it completes.
