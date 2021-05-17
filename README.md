@@ -110,7 +110,67 @@ choice 4:
 
         
         
+   
+   
+   # pyramid empty.java
+ 	this code is to print a pyramid which is an empty one i.e only with the outer surface 
+
+	    *
+	   * *
+	  *   *
+	 *     *
+	*********            like this.
+	
+	
+	for this generally we go for nested loop.
+	first we go for user input with Scanner class by creating the object.
+	
+			
+			Scanner scanner = new Scanner(System.in);
+	
+	
+	first loop: this is to print no.of rows in simple 
+	
+	
+			for(int i = 0; i < n; i++)
+			{
+			}
         
-        
-        
+	
+        inner first loop: for this i choose to print space as per the requirement, here the spaces are in such a manner decreasing from n-1 to 0
+	so that the loop will be like as follow
+	
+			
+			for(int j = 0; j < n-i-1; j++)
+			{
+				System.out.print(" ");
+			}
          
+	 
+	 inner second loop: here this goes for printing "*" s, 
+	 
+	 
+	 		for(int j = 0; j < 2*i+1; j++)
+			{
+			}
+			
+			here in this second loop, follows a condition, if it's at first or last iteration of outer loop it will print as usual
+			
+			
+				if(i == 0 || i == n-1) 
+				{
+					System.out.print("*");
+				}
+				
+				
+			else, again another condition follws like, if its its first or last iteration of its inner loop, then it will print "*", else, will print an space.
+				
+				
+				else
+				{
+					if(j == 0 || j == 2*i) System.out.print("*");
+					else System.out.print(" ");
+				}
+				
+				
+	thats all it completes.
