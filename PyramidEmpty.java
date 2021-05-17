@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class PyramidEmpty
+public class HollowPyramid
 {
 	public static void main(String[] args)
 	{
