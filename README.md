@@ -86,7 +86,8 @@ choice 4:
         it will terminates the loop from the flow, the process ends
         
 if the process continues until you give choice 4 in do- while loop as follow.
-           do
+           
+	   do
 	   {
 	    System.out.print("\n1.Create\n2.Display\n3.SalaryRaise\n4.Exit\nEnter your choice: ");
 	    choice = scanner.nextInt();
@@ -109,7 +110,61 @@ if the process continues until you give choice 4 in do- while loop as follow.
 			 break;
 	    } 
 	}while(choice !=4);
-# pyramid empty.java
+
+
+# NameDecor.java
+Here your code will prints your name which will be taken as input, its as follow
+	
+	+-------------------------------------+
+	|                                     |
+	|                                     |
+	|                                     |
+	|                Your Name goes here  |
+	|                                     |
+	+-------------------------------------+
+	
+here goes how its working: fistly The first and last rows goes similar code and the no. of rows are that of fixed, you can vary as well.
+and the coloumns are differs as per the input i.e name.
+
+iteration over rows taken first, then the coloumns, 
+	first row and last row iteration: for first colomn and last colomn prints "+" , for the remaining colomns prints "-"
+		
+			if(i == 1 || i == wid)
+			{
+				for(int j = 1; j <= len; j++)
+				{
+					System.out.print((j == 1)||(j==len) ? "+" : "-");
+					
+				}
+			}
+for but one row of last but one row : this is where the name will prints, for colomns which are lesser to that (no.of colomns-nameoflenth-3) will prints "|" for the first iteration and remaining all will prints " " (a space). and then printing of the name with "  |".
+
+			else if(i == wid-2)
+			{
+				for(int j = 1; j <= len-name_length-3; j++)
+				{
+					System.out.print((j == 1) ? "|" : " ");
+				}
+				System.out.print(name + "  |");
+			}
+		
+finally the remaining all rows, it will print for the first and last iteration with "|", remaining colomns with " "(a space).
+			
+			else
+			{
+				for(int j = 1; j <= len; j++)
+				{
+					System.out.print((j == 1)||(j==len) ? "|" : " ");
+
+				}
+			}
+for each iteration it will go to new line with an empty print statement
+		
+		System.out.println();
+		
+thats how it works, thats the 
+
+# HollowPyramid.java
 this code is to print a pyramid which is an empty one i.e only with the outer surface like the below
 
 	    *
