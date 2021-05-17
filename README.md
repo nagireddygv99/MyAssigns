@@ -10,7 +10,8 @@
 Working:
 The program is to hold one record of employee details like name, age, salary, designation.
         Once you start executing you will be getting
-                  1.Create 
+                 
+		 1.Create 
                   2.Display
                   3.RaiseSalary
                   4.Exit
@@ -58,7 +59,8 @@ choice 2:
          display method in EmpDetails will be called if records found....
          you will be displayed all the records in which are recorded
   if there are no records, you will get NoRecords.....
-               void display()
+              
+	      void display()
                {
                       System.out.println("name : " + name);
                       System.out.println("age : "+ age);
@@ -83,9 +85,9 @@ choice 3:
 choice 4:
         it will terminates the loop from the flow, the process ends
         
-        if the process continues until you give choice 4 in do- while loop as follow.
+if the process continues until you give choice 4 in do- while loop as follow.
            do
-	{
+	   {
 	    System.out.print("\n1.Create\n2.Display\n3.SalaryRaise\n4.Exit\nEnter your choice: ");
 	    choice = scanner.nextInt();
 	    boolean records = false;
