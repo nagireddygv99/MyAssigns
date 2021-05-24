@@ -60,13 +60,12 @@ public class DataEntry {
 					innerMenuChoice = scanner.nextInt();
 					Employee emp = null;
 					switch(innerMenuChoice) {
-						case 1: //employee.add(new Clerk());
-								emp = new Clerk();
-								break;
+						case 1: emp = new Clerk();
+							break;
 						case 2: emp = new Manager();
-							    break;
+						        break;
 						case 3: emp = new Programmer();
-								break;
+							break;
 						case 4: break;
 						default: System.out.print("\n\ninvalid entry...!");
 						        break;
