@@ -111,6 +111,31 @@ if the process continues until you give choice 4 in do- while loop as follow.
 	    } 
 	}while(choice !=4);
 
+# DataEntry.java
+It's is same as the above Emp one, but here again will be given choice to only to name and age, profession has to select before the entry of data. 
+Firstly it will be giving the options like 
+			
+			1.Create 
+                  	2.Display
+                  	3.RaiseSalary
+                  	4.Exit
+			
+if you enter the option 1: it will be asking the profession like Clerk, Manager, Programmer, exit.
+here if the options 1 or 2 or 3 is selected user is asked to enter the name and age, if the same data is already existing, the record won't be stored again.
+Option 4 redirect to previous menu.
+
+			1.Clerk
+			2.Manager
+			3.Programmer
+			4.Exit
+			
+If you enter option 2: it will display the existing records. If no records found it will display the same.
+Option 3: This is only to raise salary of employees all together. If no records found, the same will be displayed.
+Option 4: Terminates the process and ends the program.
+
+if any option, other than these four, will displays the invalid choice.
+
+
 
 # NameDecor.java
 Here your code will prints your name which will be taken as input, its as follow
