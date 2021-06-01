@@ -250,5 +250,43 @@ else, again another condition follws like, if its its first or last iteration of
 					else System.out.print(" ");
 				}
 				
-				
 thats all it completes.
+
+
+# WordGame.java
+In this program there are two games one is guessing the words in which some characters are replaced with * s.
+In the second one, all characters are shuffled so that we have to guess the words correctly. where you will be having points too.
+1-> Star word game: In this, some characters are replaced in such a way that there is no order so that here i have taken Random class to select some index positions of a word.
+And then Replacing the characters with the stars(*). This replacement is done through for loop only as usual.
+			
+			List<Integer> list = new ArrayList<>();
+			for(int j = 0;j<words[i].length();j++) {
+				list.add(j);
+			}
+			Collections.shuffle(list);
+			int[] l = new int[list.size()/2];
+			for(int k=0;k<l.length;k++) {
+				l[k] = list.get(k);
+			}	
+
+The above code is shuffle and selecing the random indexes of the word. then it will display the word with stars, if your guess is correct you will be pointed or else nothing.
+
+2-> Jumbled word game: In this the words are shuffled, you have to guess correctly.
+
+		char[] ch = str.toCharArray();
+		int ind=0;
+		Character[] chr = new Character[ch.length];
+		for(char c:ch) {
+			chr[ind++] = c;
+		}
+		List ll = Arrays.asList(chr);
+		Collections.shuffle(ll);
+		ind = 0;
+		for(Object c:ll) {
+			Character cc = (Character) c;
+			ch[ind++] = cc;
+		}
+		
+the above code is for jumbling the charcters of word, i have used collections for this shuffling. Here the same too, that if your guess is correct you will be pointed or else nothing.
+
+thats how it works.
